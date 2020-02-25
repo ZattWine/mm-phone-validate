@@ -27,4 +27,24 @@ object DefaultOperator {
         MEC = MmOperator.createOperator("MecTel", "Mec")
         UNKNOWN = MmOperator.createOperator("Unknown Operator", "Unknown")
     }
+
+    fun getDefaultOperators(): List<Operator> {
+        val lists = mutableListOf<Operator>()
+        lists.add(MPT)
+        lists.add(TELENOR)
+        lists.add(MYTEL)
+        lists.add(OOREDOO)
+        lists.add(MEC)
+        return lists
+    }
+
+    fun getDefaultOperatorNames(): List<String> {
+        val lists = mutableListOf<String>()
+        lists.add(MPT.shortName)
+        lists.add(TELENOR.shortName)
+        lists.add(MYTEL.shortName)
+        lists.add(OOREDOO.shortName)
+        lists.add(MEC.shortName)
+        return lists
+    }
 }

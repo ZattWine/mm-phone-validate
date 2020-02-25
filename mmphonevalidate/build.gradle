@@ -1,5 +1,20 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    def groupProjectID = 'com.norm.mmphonevalidate'
+    def artifactProjectID = 'mmphonevalidate'
+    def publishVersionID = '0.1.0'
+
+    userOrg = 'odxnorm'
+    repoName = 'mmphonevalidate'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Myanmar Phone Numbering for validating phone number of major operators from Myanmar.'
+    website = 'https://github.com/ZattWine/mm-phone-validae'
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])

@@ -1,3 +1,7 @@
 <resources>
-  <string name="app_name">MmPhoneValidateDemo</string>
+    <string name="app_name">MmPhoneValidateDemo</string>
+    <string name="str_check_operator">Check Operator</string>
+    <string name="str_check">Check</string>
+  <string name="str_not_success">No, your number is not that operator.</string>
+  <string name="str_success">Yes, your operator is that operator.</string>
 </resources>
